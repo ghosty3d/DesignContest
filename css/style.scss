@@ -1,0 +1,122 @@
+$white: #fff;
+$red: #f00;
+$blue: #337ab7;
+$pink: #faafb8;
+$green: #a3d39c;
+
+body
+{
+	background: url('../images/background.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	padding: 0 0 1.5em 0;
+}
+
+.wrapper
+{
+	background: rgba(0,0,0,0.65);
+	padding: 2em;
+	border-radius: 1.25em;
+}
+
+.wrapper h1
+{
+	color: $white;
+	margin: 1.5em auto;
+}
+
+#breadcrumb
+{
+	background: rgba(0, 0, 0, 0.65);
+}
+
+#breadcrumb li.active a
+{
+	color: $white !important;
+	font-weight: 600;
+}
+
+form#order-form
+{
+	margin-top: 3em;
+}
+
+form#order-form label
+{
+	color: $white;
+}
+
+form#order-form input,
+form#order-form textarea,
+form#order-form select
+{
+	margin-bottom: 1.25em;
+}
+
+form#order-form textarea
+{
+	resize: vertical;
+}
+
+form .ng-pristine
+{
+	background: $white;
+}
+
+form .ng-invalid.ng-dirty
+{
+	background: $pink !important;
+}
+
+form .ng-valid.ng-dirty
+{
+	background: $green !important;
+}
+
+.error
+{
+	color: $red;
+}
+
+#packages
+{
+	list-style: none;
+}
+
+#packages li
+{
+	padding: 0 1em 1.5em;
+}
+#packages li .border
+{
+	border: 1px solid $blue;
+	background: $white;
+}
+#packages li h3
+{
+	background: $blue;
+	padding: 1em;
+	color: $white;
+	margin: 0 0 1em 0;
+}
+
+#packages button
+{
+	display: block;
+	margin: 1.5em auto;
+}
+
+#currency
+{
+	text-align: center;
+	padding: 0 3em;
+	color: $white;
+	margin-bottom: 2em;
+}
+
+#submit
+{
+	display: block;
+	margin: 1em auto;
+}

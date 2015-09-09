@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="TestApp">
+	<head>
+		<title>Designcontest - Test</title>
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<base href="/">
+		
+		<!-- CSS -->
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+		
+		<!-- Scripts -->
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/angular-animate.min.js"></script>
+		<script src="js/angular-route.min.js"></script>
+		<script src="js/angular-resource.min.js"></script>
+		<script src="js/app.js"></script>
+	</head>
+	
+	<body>
+		
+		<div class="container-fluid">
+			<div class="row">
+				<div class="jumbotron">
+					<h1>Test for Design Contest</h1>
+					<p><b>Assegnee:&nbsp;</b>Serhii Chechui</p>
+					<p><b>E-mail:&nbsp;</b><a href="mailto:ghost201087@gmail.com">ghost201087@gmail.com</a></p>
+					<p>In any case, would be great to have my solution review. Thanks!</p>
+				</div>
+			</div>
+			<div class="row">
+				
+				<ol id="breadcrumb" class="breadcrumb col-lg-10 col-lg-offset-1">
+					<li><a href="/#/step1">Credentials</a></li>
+					<li><a href="/#/step2">Packages</a></li>
+				</ol>
+				
+				<div ng-view>
+					
+				</div>
+			</div>
+		</div>
+				
+	</body>
+</html>

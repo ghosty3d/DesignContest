@@ -1,0 +1,29 @@
+<div class="wrapper col-lg-10 col-lg-offset-1">
+<h1 class="light header-plask text-center">Step – 2. Select currency and package type.</h1>
+
+<div class="row">
+	<div id="currency" class="col-lg-6 col-lg-offset-3">
+		<label for="currencyList">Select currency:</label>
+		<select id="currency-list" class="form-control" name="currencyList" ng-model="currencyList" ng-change="currencyChange(currencyList)">
+			<option ng-repeat="currency in currencies" value="{{currency.id}}" ng-selected="{{currency.selected}}">{{currency.nameCurrency}}</option>
+		</select>
+	</div>
+</div>
+
+<div class="row">
+	<ul id="packages">
+		<li class="col-lg-4" ng-repeat="package in packages">
+			<div class="border">
+				<h3 class="text-center">{{package.namePackage}}</h3>
+				<p class="text-center">{{package.descriptionPackage}}</p>				
+				<h4 class="text-center" ng-bind-template="Price: {{getPrice(package)}}"></h4>
+				<button class="text-center btn btn-primary btn-lg" type="button" ng-click="addPackageData(package)">Select</button>
+			</div>
+		</li>
+	</ul>	
+</div>
+
+<div class="row">
+	<button id="submit" class="text-center btn btn-primary btn-lg" type="button" ng-disabled="!packageSelected" ng-click="submitRequest()">Submit Request</button>
+</div>
+</div>

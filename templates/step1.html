@@ -1,0 +1,35 @@
+<div class="wrapper col-lg-offset-3 col-lg-6">
+<h1 class="text-center">Step – 1. Fill order form with credentials.</h1>
+<form name="orderForm" id="order-form" ng-controller="MainFormController" novalid ng-submit="collectData(order)">
+	<fieldset>
+		
+		<label class="" for="name">Name:</label>
+		<span class="error" ng-show="orderForm.name.$invalid && orderForm.name.$dirty">
+			{{showInputError(orderForm.name.$error)}}
+		</span>
+		<input class="form-control" type="text" name="name" required="required" ng-model="order.name" placeholder="Enter You Name">
+		
+		
+		<label class="" for="email">E-mail:</label>
+		<span class="error" ng-show="orderForm.email.$invalid && orderForm.email.$dirty">
+			{{showInputError(orderForm.email.$error)}}
+		</span>
+		<input class="form-control" type="email" name="email" required="required" ng-model="order.email" placeholder="Enter You E-mail">
+		
+		<label class="" for="country">Country:</label>
+		<select id="countries-list" class="form-control" type="email" name="country" required="required" ng-model="order.country" selected="order.country"></select>
+		
+		<label class="" for="companyName">Company Name:</label>
+		<span class="error" ng-show="orderForm.companyName.$invalid && orderForm.companyName.$dirty">
+		{{showInputError(orderForm.companyName.$error)}}
+		</span>
+		<input id="company-name" class="form-control" type="text" name="companyName" required="required" ng-model="order.companyName" placeholder="Enter You Company Name Here">
+		
+		<label class="" for="company-description">Company Description:</label>
+		<textarea id="company-description" class="form-control" type="text" name="company-description" required="required" ng-model="order.companyDescription" placeholder="Enter You Company Description Here"></textarea>
+		
+	</fieldset>
+	
+	<button id="submit-orderForm" class="btn btn-primary btn-lg" name="submit" type="submit" ng-disabled="orderForm.$invalid">Submit</button>
+</form>
+</div>
