@@ -1,0 +1,52 @@
+{
+  "name": "Design Contest",
+  "description": "Test for Design Contest",
+  "main": [
+    "index.html",
+    "css/style.scss",
+    "css/style.css",
+    "js/angular-resource.min.js",
+    "js/angular-resource.min.js.map",
+    "js/angular-route.min.js",
+    "js/angular-route.min.map",
+    "js/angular.min.js",
+    "js/angular.min.js.map",
+    "js/app.js",
+    "js/bootstrap.min.js",
+    "js/jquery-2.1.4.min.js",
+    "js/npm.js",
+    "tamplates/countries.html",
+    "tamplates/step1.html",
+    "tamplates/step2.html",
+    "fonts/glyphicons-halflings-regular.eot",
+    "fonts/glyphicons-halflings-regular.svg",
+    "fonts/glyphicons-halflings-regular.ttf",
+    "fonts/glyphicons-halflings-regular.woff",
+    "fonts/glyphicons-halflings-regular.woff2",
+    "images/background.jpg"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "angular": "~1.4.5"
+  },
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "web",
+    "test",
+    "particles"
+  ],
+  "authors": [
+    "Serhii Chechui <ghost201087@gmail.com>"
+  ],
+  "license": "GNU",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
